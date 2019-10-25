@@ -1,7 +1,9 @@
-# system-design
-Repository for System Design
+# System Design Topics
 
-<h1>Scalability</h1>
+<h2>Scalability</h2>
+
+Read about scalability here or refer to this article - <a href="https://www.lecloud.net/tagged/scalability/chrono">Scalability</a>
+
 <ul>
   <li> <h3>Clones</h3>
 Public servers of a scalable web service are hidden behind a load balancer. This load balancer evenly distributes load (requests from your users) onto your group/cluster of  application servers. 
