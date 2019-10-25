@@ -79,3 +79,32 @@ If you now want to dive more into the details and actual technical design, I rec
 If you do something time-consuming, try to do it always asynchronously.
   </li>
 </ul>
+
+<h2>High-Level Trade-offs</h2>
+
+Everything is a trade-off.
+
+<ul>
+  <li><b>Performance vs scalability</b></li>
+  <li><b>Latency vs throughput</b></li>
+  <li><b>Availability vs consistency</b></li>
+</ul>
+
+<h3>Performance vs scalability</h3>
+<p>
+ A service is said to be <b>scalable</b> if when we increase the resources in a system, it results in increased performance in a manner proportional to resources added. </p>
+ <p>
+ Increasing <b>performance</b> in general means serving more units of work, but it can also be to handle larger units of work, such as when datasets grow.</p>
+ 
+Another way to look at performance vs scalability:
+<ul>
+<li>If you have a <b>performance</b> problem, your system is slow for a single user.</li>
+<li>If you have a <b>scalability</b> problem, your system is fast for a single user but slow under heavy load.</li>
+</ul>
+
+Further readings sources -
+ <ul>
+  <li><a href="https://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html">A word on scalability</a></li>
+  <li><a href="http://www.slideshare.net/jboner/scalability-availability-stability-patterns/">Scalability, availability, stability, patterns</a></li>
+ </ul>
+ 
