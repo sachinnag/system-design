@@ -179,8 +179,9 @@ public class ThreadSafeLRUCache<K, V> extends LinkedHashMap<K, V> {
 }
 ```
 
-> **When Asked in Interviews**
+> **When Asked in Interviews**\
 > If the question is: "How would you make your LRU cache thread-safe?"
-> You can say:
+> 
+> You can say:\
 > I’d add thread-safety using Java's built-in synchronization (synchronized or ReentrantLock) around access methods like get() and put(). If high performance is a concern, I’d use ConcurrentHashMap for the map and fine-grained locking for the doubly linked list. Alternatively, for production use, I might extend LinkedHashMap with accessOrder and synchronize public methods for simplicity and correctness.
 
